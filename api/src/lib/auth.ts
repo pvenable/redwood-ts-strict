@@ -1,3 +1,9 @@
+export type CurrentUser = { id: number; roles: string[] }
+
+export const getCurrentUser = (): CurrentUser | null => {
+  return { id: 42, roles: ['user'] }
+}
+
 /**
  * Once you are ready to add authentication to your application
  * you'll build out requireAuth() with real functionality. For
